@@ -12,6 +12,8 @@ try:
     from PIL import Image
 except ImportError:
     Image = None
+#Input the desired output path here VV
+filepath = 'C:/Users/denki/Pictures/EE/CA Created Graphs/RL Comparison/'
 
 #NaSch empty cell
 NSEMPTY = -1
@@ -199,7 +201,7 @@ class NaschImagePlayer(cage.Player):
         self.finish(roadLength, iters, vmax, p, density)
 
     def finish(self, roadLength, iters, vmax, p, density):
-        self.image.save('C:/Users/denki/Pictures/EE/CA Created Graphs/RL Comparison/'+str(roadLength) + "x" + str(iters) + ", vmax=" + str(vmax) + ", p= " + str(p) + ", density=" + str(density)+'.png', 'PNG')
+        self.image.save(filepath+str(roadLength) + "x" + str(iters) + ", vmax=" + str(vmax) + ", p= " + str(p) + ", density=" + str(density)+'.png', 'PNG')
 
 
 
