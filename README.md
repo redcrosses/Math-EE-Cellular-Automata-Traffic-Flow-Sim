@@ -1,6 +1,6 @@
 # My Math EE Cellular Automata Traffic Flow Simulation :)
 
-This is a program that simulates Nagel-Schreckenberg's Cellular Automata traffic flow model in python.
+This is a program I used to write my Extended Essay as part of the International Baccalaureate Diploma Programme that simulates Nagel-Schreckenberg's Cellular Automata traffic flow model in python.
 It outputs a png image of the simulation's results to the desired filepath on your computer.
 
 ## Dependencies
