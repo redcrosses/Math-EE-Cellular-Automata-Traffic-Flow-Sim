@@ -1,12 +1,3 @@
-# !/usr/bin/python
-
-#Javier Novoa C., jstitch@gmail.com
-
-#2008/02/27
-
-#This code is licensed under the GPLv3 license:
-# http://www.gnu.org/licenses/gpl.html
-
 """
 An implementation of Nagel-Schreckenberg vehicular traffic automaton.
 """
@@ -30,7 +21,7 @@ class NaschMap(cage.RadialMap):
     """A one-dimensional, radial map for NaSch model."""
     #NaschMap is a radial map, that means neighborhoods are radial,
     #with radius = vmax. However, in practice, real neighborhood is
-    #more dynamic: it goes from the preceding vehicule to the one at
+    #more dynamic: it goes from the preceding vehicle to the one at
     #the front of certain cell, up to vmax cells in either
     #direction, but since CAGE don't consider for dynamic neighborhoods
     #is enough to use radial ones and limit them in populate or rule
@@ -46,7 +37,7 @@ class NaschMap(cage.RadialMap):
 #Nasch first 3 rules: speed modification rules
 class NewspeedRule(cage.Rule):
     """Nagel & Schreckenberg 1st, 2nd and 3rd rules applied to
-    change vehicule-cells' speed, empty cells remain untouched"""
+    change vehicle-cells' speed, empty cells remain untouched"""
     def __init__(self, vmax, p):
         random.seed()
         self.vmax = vmax
