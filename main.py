@@ -13,7 +13,7 @@ try:
 except ImportError:
     Image = None
 #Input the desired output path here VV
-filepath = 'C:/Users/denki/Pictures/EE/CA Created Graphs/RL Comparison/'
+filepath = 'insert file path here'
 
 #NaSch empty cell
 NSEMPTY = -1
